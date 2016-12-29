@@ -12,12 +12,17 @@ import SwiftyJSON
 class TodayViewController: NSViewController {
 
     @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var indicator: NSProgressIndicator!
+    @IBOutlet weak var indicatorTextField: NSTextField!
     
     var games: JSON? {
         didSet {
             
             if tableView != nil { //没有显示的时候防止崩溃
                 tableView.reloadData()
+                indicator.isHidden = true
+                indicatorTextField.isHidden = true
+                indicator.stopAnimation(nil)
             }
             
         }
@@ -26,14 +31,26 @@ class TodayViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
+        if games == nil {
+            startIndicator()
+        }
+        
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
         
+        startIndicator()
         DataLoader.shared.loadToday { (json) in
             self.games = json["gs"]["g"]
         }
+    }
+    
+    func startIndicator() {
+        indicator.isHidden = false
+        indicatorTextField.isHidden = false
+        indicator.startAnimation(nil)
     }
     
     @IBAction func quit(_ sender: Any) {

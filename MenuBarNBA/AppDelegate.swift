@@ -16,9 +16,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system().statusItem(withLength: -2)
     let popover = NSPopover()
 
+    var eventMonitor: EventMonitor?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        
+    
         if let button = statusItem.button {
             button.image = NSImage(named: "StatusBarButtonImage")
             button.action = #selector(togglePopover(sender:))
@@ -29,6 +31,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         DataLoader.shared.loadToday { (json) in
             (self.popover.contentViewController as? TodayViewController)?.games = json["gs"]["g"]
         }
+        
+        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [unowned self] event in
+            if self.popover.isShown {
+                self.closePopover(sender: event)
+            }
+        }
+        eventMonitor?.start()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -39,10 +48,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = statusItem.button {
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
+        eventMonitor?.start()
     }
     
     func closePopover(sender: AnyObject?) {
         popover.performClose(sender)
+        eventMonitor?.stop()
     }
     
     func togglePopover(sender: AnyObject?) {

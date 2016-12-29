@@ -10,7 +10,7 @@ import Cocoa
 import SwiftyJSON
 import Alamofire
 
-class DataLoader: NSObject {
+public class DataLoader {
 
     static let shared = DataLoader()
     
