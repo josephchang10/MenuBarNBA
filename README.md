@@ -1,7 +1,7 @@
 #NBA分数板
 ---
 实时查看NBA今日比赛分数
-[](screenshot.jpg)
+![](screenshot.jpg)
 ---
 
 #建议
