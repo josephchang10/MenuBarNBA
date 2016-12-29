@@ -1,0 +1,27 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Home"; ObjectID = "5Eb-Yk-Ib1"; */
+"5Eb-Yk-Ib1.headerCell.title" = "Home";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "7DE-3b-L9h"; */
+"7DE-3b-L9h.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "9AX-pl-UEp"; */
+"9AX-pl-UEp.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HXH-sb-duf"; */
+"HXH-sb-duf.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Time"; ObjectID = "Lvv-Tb-i3g"; */
+"Lvv-Tb-i3g.headerCell.title" = "Time";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "PHv-Wb-HdE"; */
+"PHv-Wb-HdE.title" = "Quit";
+
+/* Class = "NSTableColumn"; headerCell.title = "Visting"; ObjectID = "Ymm-vF-eND"; */
+"Ymm-vF-eND.headerCell.title" = "Visting";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ZtM-Px-3uO"; */
+"ZtM-Px-3uO.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "dzj-Cw-i4A"; */
+"dzj-Cw-i4A.title" = "Text Cell";

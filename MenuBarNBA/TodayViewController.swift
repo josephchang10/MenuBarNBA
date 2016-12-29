@@ -35,6 +35,11 @@ class TodayViewController: NSViewController {
             self.games = json["gs"]["g"]
         }
     }
+    
+    @IBAction func quit(_ sender: Any) {
+        NSApplication.shared().terminate(sender)
+    }
+    
 }
 
 extension TodayViewController: NSTableViewDataSource {

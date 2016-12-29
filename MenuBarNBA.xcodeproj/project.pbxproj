@@ -29,6 +29,7 @@
 		7C99ACCA1E14AF57003EE34A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TodayViewController.strings"; sourceTree = "<group>"; };
 		7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		7C99ACCD1E14DEA2003EE34A /* MenuBarNBA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarNBA.entitlements; sourceTree = "<group>"; };
+		7C99ACCF1E14F4D7003EE34A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TodayViewController.strings; sourceTree = "<group>"; };
 		DB8708A43C95198BE36C12BC /* Pods-MenuBarNBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarNBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA.release.xcconfig"; sourceTree = "<group>"; };
 		EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuBarNBA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -248,6 +249,7 @@
 			children = (
 				7C99ACC71E14AF53003EE34A /* Base */,
 				7C99ACCA1E14AF57003EE34A /* zh-Hans */,
+				7C99ACCF1E14F4D7003EE34A /* en */,
 			);
 			name = TodayViewController.xib;
 			sourceTree = "<group>";
