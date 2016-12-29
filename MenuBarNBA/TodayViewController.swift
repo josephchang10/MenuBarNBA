@@ -91,6 +91,7 @@ extension TodayViewController: NSTableViewDelegate {
         }else if tableColumn == tableView.tableColumns[2] {
             cellIdentifier = CellIdentifiers.TimeCell
             text = game["stt"].string ?? ""
+            text = NSLocalizedString(text, comment: "时间")
             
             if game["cl"].string != "00:00.0", let cl = game["cl"].string {
                 text += " \(cl)"
@@ -99,7 +100,7 @@ extension TodayViewController: NSTableViewDelegate {
         }
         
         if let ta = team?["ta"].string, let s = team?["s"].int {
-            text = "\(ta) \(s)"
+            text = "\(NSLocalizedString(ta, comment: "球队名字")) \(s)"
         }
         
         if let cell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
