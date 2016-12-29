@@ -10,14 +10,26 @@
 		7C99ACB51E14A36B003EE34A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99ACB41E14A36B003EE34A /* AppDelegate.swift */; };
 		7C99ACB71E14A36B003EE34A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACB61E14A36B003EE34A /* Assets.xcassets */; };
 		7C99ACBA1E14A36B003EE34A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACB81E14A36B003EE34A /* MainMenu.xib */; };
+		7C99ACC31E14AA1E003EE34A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99ACC11E14AA1E003EE34A /* TodayViewController.swift */; };
+		7C99ACC61E14AF53003EE34A /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACC81E14AF53003EE34A /* TodayViewController.xib */; };
+		7C99ACCC1E14B6CA003EE34A /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */; };
+		D32685B3430D5B094CDEC6A2 /* Pods_MenuBarNBA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24FB3084AD50002ADBED58A9 /* Pods-MenuBarNBA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarNBA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA.debug.xcconfig"; sourceTree = "<group>"; };
 		7C99ACB11E14A36B003EE34A /* MenuBarNBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarNBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C99ACB41E14A36B003EE34A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C99ACB61E14A36B003EE34A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C99ACB91E14A36B003EE34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7C99ACBB1E14A36B003EE34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C99ACC11E14AA1E003EE34A /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		7C99ACC51E14AF36003EE34A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		7C99ACC71E14AF53003EE34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		7C99ACCA1E14AF57003EE34A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TodayViewController.strings"; sourceTree = "<group>"; };
+		7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		DB8708A43C95198BE36C12BC /* Pods-MenuBarNBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarNBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA.release.xcconfig"; sourceTree = "<group>"; };
+		EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuBarNBA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32685B3430D5B094CDEC6A2 /* Pods_MenuBarNBA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +49,8 @@
 			children = (
 				7C99ACB31E14A36B003EE34A /* MenuBarNBA */,
 				7C99ACB21E14A36B003EE34A /* Products */,
+				C20D687B54897CCDE496F2F2 /* Pods */,
+				AF78EC16727B7F1E13EB6337 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +69,28 @@
 				7C99ACB61E14A36B003EE34A /* Assets.xcassets */,
 				7C99ACB81E14A36B003EE34A /* MainMenu.xib */,
 				7C99ACBB1E14A36B003EE34A /* Info.plist */,
+				7C99ACC11E14AA1E003EE34A /* TodayViewController.swift */,
+				7C99ACC81E14AF53003EE34A /* TodayViewController.xib */,
+				7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */,
 			);
 			path = MenuBarNBA;
+			sourceTree = "<group>";
+		};
+		AF78EC16727B7F1E13EB6337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C20D687B54897CCDE496F2F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24FB3084AD50002ADBED58A9 /* Pods-MenuBarNBA.debug.xcconfig */,
+				DB8708A43C95198BE36C12BC /* Pods-MenuBarNBA.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C99ACBE1E14A36B003EE34A /* Build configuration list for PBXNativeTarget "MenuBarNBA" */;
 			buildPhases = (
+				CEF632F8BECEA93A77CE850D /* [CP] Check Pods Manifest.lock */,
 				7C99ACAD1E14A36B003EE34A /* Sources */,
 				7C99ACAE1E14A36B003EE34A /* Frameworks */,
 				7C99ACAF1E14A36B003EE34A /* Resources */,
+				B2EA80796DECF9F4042C2801 /* [CP] Embed Pods Frameworks */,
+				813D099F57EA510546CF4FC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,6 +140,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7C99ACA81E14A36B003EE34A;
 			productRefGroup = 7C99ACB21E14A36B003EE34A /* Products */;
@@ -120,17 +159,68 @@
 			files = (
 				7C99ACB71E14A36B003EE34A /* Assets.xcassets in Resources */,
 				7C99ACBA1E14A36B003EE34A /* MainMenu.xib in Resources */,
+				7C99ACC61E14AF53003EE34A /* TodayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		813D099F57EA510546CF4FC3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2EA80796DECF9F4042C2801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEF632F8BECEA93A77CE850D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C99ACAD1E14A36B003EE34A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C99ACC31E14AA1E003EE34A /* TodayViewController.swift in Sources */,
 				7C99ACB51E14A36B003EE34A /* AppDelegate.swift in Sources */,
+				7C99ACCC1E14B6CA003EE34A /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +231,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				7C99ACB91E14A36B003EE34A /* Base */,
+				7C99ACC51E14AF36003EE34A /* zh-Hans */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7C99ACC81E14AF53003EE34A /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C99ACC71E14AF53003EE34A /* Base */,
+				7C99ACCA1E14AF57003EE34A /* zh-Hans */,
+			);
+			name = TodayViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -152,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -201,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -240,6 +342,7 @@
 		};
 		7C99ACBF1E14A36B003EE34A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24FB3084AD50002ADBED58A9 /* Pods-MenuBarNBA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -254,6 +357,7 @@
 		};
 		7C99ACC01E14A36B003EE34A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB8708A43C95198BE36C12BC /* Pods-MenuBarNBA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -285,6 +389,7 @@
 				7C99ACC01E14A36B003EE34A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

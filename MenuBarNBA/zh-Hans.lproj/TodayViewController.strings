@@ -1,0 +1,18 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "主场球队"; ObjectID = "5Eb-Yk-Ib1"; */
+"5Eb-Yk-Ib1.headerCell.title" = "主场球队";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "7DE-3b-L9h"; */
+"7DE-3b-L9h.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "9S1-L4-cHp"; */
+"9S1-L4-cHp.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HXH-sb-duf"; */
+"HXH-sb-duf.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "客场球队"; ObjectID = "Ymm-vF-eND"; */
+"Ymm-vF-eND.headerCell.title" = "客场球队";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ZtM-Px-3uO"; */
+"ZtM-Px-3uO.title" = "Text Cell";
