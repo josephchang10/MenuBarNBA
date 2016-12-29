@@ -14,6 +14,8 @@
 		7C99ACC61E14AF53003EE34A /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACC81E14AF53003EE34A /* TodayViewController.xib */; };
 		7C99ACCC1E14B6CA003EE34A /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */; };
 		7C99ACD11E14F5AB003EE34A /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99ACD01E14F5AB003EE34A /* EventMonitor.swift */; };
+		7C99ACD61E1511FE003EE34A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACD51E1511FE003EE34A /* Info.plist */; };
+		7C99ACD91E151259003EE34A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACDB1E151259003EE34A /* InfoPlist.strings */; };
 		D32685B3430D5B094CDEC6A2 /* Pods_MenuBarNBA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +25,6 @@
 		7C99ACB41E14A36B003EE34A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C99ACB61E14A36B003EE34A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C99ACB91E14A36B003EE34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7C99ACBB1E14A36B003EE34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C99ACC11E14AA1E003EE34A /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		7C99ACC51E14AF36003EE34A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		7C99ACC71E14AF53003EE34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
@@ -32,6 +33,9 @@
 		7C99ACCD1E14DEA2003EE34A /* MenuBarNBA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarNBA.entitlements; sourceTree = "<group>"; };
 		7C99ACCF1E14F4D7003EE34A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TodayViewController.strings; sourceTree = "<group>"; };
 		7C99ACD01E14F5AB003EE34A /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		7C99ACD51E1511FE003EE34A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C99ACDA1E151259003EE34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C99ACDC1E15125A003EE34A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DB8708A43C95198BE36C12BC /* Pods-MenuBarNBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarNBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA.release.xcconfig"; sourceTree = "<group>"; };
 		EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuBarNBA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,12 +76,13 @@
 				7C99ACCD1E14DEA2003EE34A /* MenuBarNBA.entitlements */,
 				7C99ACB41E14A36B003EE34A /* AppDelegate.swift */,
 				7C99ACB61E14A36B003EE34A /* Assets.xcassets */,
+				7C99ACD51E1511FE003EE34A /* Info.plist */,
 				7C99ACB81E14A36B003EE34A /* MainMenu.xib */,
-				7C99ACBB1E14A36B003EE34A /* Info.plist */,
 				7C99ACC11E14AA1E003EE34A /* TodayViewController.swift */,
 				7C99ACC81E14AF53003EE34A /* TodayViewController.xib */,
 				7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */,
 				7C99ACD01E14F5AB003EE34A /* EventMonitor.swift */,
+				7C99ACDB1E151259003EE34A /* InfoPlist.strings */,
 			);
 			path = MenuBarNBA;
 			sourceTree = "<group>";
@@ -168,9 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C99ACD61E1511FE003EE34A /* Info.plist in Resources */,
 				7C99ACB71E14A36B003EE34A /* Assets.xcassets in Resources */,
 				7C99ACBA1E14A36B003EE34A /* MainMenu.xib in Resources */,
 				7C99ACC61E14AF53003EE34A /* TodayViewController.xib in Resources */,
+				7C99ACD91E151259003EE34A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +263,15 @@
 				7C99ACCF1E14F4D7003EE34A /* en */,
 			);
 			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		7C99ACDB1E151259003EE34A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C99ACDA1E151259003EE34A /* Base */,
+				7C99ACDC1E15125A003EE34A /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
