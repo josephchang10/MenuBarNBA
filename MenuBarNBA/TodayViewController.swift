@@ -63,16 +63,8 @@ extension TodayViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
         return games?.count ?? 0
     }
-}
-
-extension TodayViewController: NSTableViewDelegate {
     
-    fileprivate enum CellIdentifiers {
-        static let TeamCell = "TeamCellID"
-        static let TimeCell = "TimeCellID"
-    }
-    
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         guard let game = games?[row] else {
             return nil
         }
@@ -81,7 +73,6 @@ extension TodayViewController: NSTableViewDelegate {
         
         var text = ""
         var team: JSON?
-        var cellIdentifier = CellIdentifiers.TeamCell
         if tableColumn == tableView.tableColumns[0] {
             //home
             team = game["h"]
@@ -89,7 +80,6 @@ extension TodayViewController: NSTableViewDelegate {
             //visiting
             team = game["v"]
         }else if tableColumn == tableView.tableColumns[2] {
-            cellIdentifier = CellIdentifiers.TimeCell
             text = game["stt"].string ?? ""
             text = NSLocalizedString(text, comment: "时间")
             
@@ -102,11 +92,6 @@ extension TodayViewController: NSTableViewDelegate {
         if let ta = team?["ta"].string, let s = team?["s"].int {
             text = "\(NSLocalizedString(ta, comment: "球队名字")) \(s)"
         }
-        
-        if let cell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
-            cell.textField?.stringValue = text
-            return cell
-        }
-        return nil
+        return text
     }
 }
