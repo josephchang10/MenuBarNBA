@@ -1,0 +1,54 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "0hL-2J-Wnb"; */
+"0hL-2J-Wnb.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "33N-z2-yfU"; */
+"33N-z2-yfU.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3BV-cm-GAY"; */
+"3BV-cm-GAY.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Time"; ObjectID = "4B0-we-97Q"; */
+"4B0-we-97Q.headerCell.title" = "时间";
+
+/* Class = "NSTableColumn"; headerCell.title = "Player"; ObjectID = "Omc-ex-Q0O"; */
+"Omc-ex-Q0O.headerCell.title" = "球员";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "P29-qz-qA5"; */
+"P29-qz-qA5.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Visiting"; ObjectID = "QEj-g6-3IJ"; */
+"QEj-g6-3IJ.title" = "Visiting";
+
+/* Class = "NSTableColumn"; headerCell.title = "Assists"; ObjectID = "RMg-r0-Rws"; */
+"RMg-r0-Rws.headerCell.title" = "助攻";
+
+/* Class = "NSTableColumn"; headerCell.title = "Rebounds"; ObjectID = "Rrk-op-SvV"; */
+"Rrk-op-SvV.headerCell.title" = "篮板";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "YB0-bh-wCg"; */
+"YB0-bh-wCg.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Field goal 3"; ObjectID = "ZRN-Um-A1v"; */
+"ZRN-Um-A1v.headerCell.title" = "三分";
+
+/* Class = "NSTableColumn"; headerCell.title = "Field goal"; ObjectID = "ZSR-uX-HWa"; */
+"ZSR-uX-HWa.headerCell.title" = "投篮";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "bTQ-2c-7Wl"; */
+"bTQ-2c-7Wl.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Home"; ObjectID = "d5t-YA-zN2"; */
+"d5t-YA-zN2.title" = "Home";
+
+/* Class = "NSTextFieldCell"; title = "City@Arena"; ObjectID = "dyM-o3-nuG"; */
+"dyM-o3-nuG.title" = "City@Arena";
+
+/* Class = "NSTableColumn"; headerCell.title = "Points"; ObjectID = "gey-nR-ryf"; */
+"gey-nR-ryf.headerCell.title" = "得分";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "q2X-79-zoN"; */
+"q2X-79-zoN.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "at: "; ObjectID = "qay-0S-GbB"; */
+"qay-0S-GbB.title" = "at: ";

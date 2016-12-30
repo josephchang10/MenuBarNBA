@@ -14,6 +14,9 @@ class Game {
     let gid: String
     let v: Team
     let h: Team
+    var an: String?
+    var ac: String?
+    var at: Int?
     
     init(cl: String, gid: String, v: Team, h:Team, stt: String) {
         self.cl = cl
@@ -33,5 +36,15 @@ class Game {
         let hTeam = Team(json: h)
         
         self.init(cl: cl, gid: gid, v: vTeam, h: hTeam, stt: stt)
+    }
+    
+    func setStats(data: JSON) {
+        let json = data["g"]
+        an = json["an"].string
+        ac = json["ac"].string
+        at = json["at"].int
+        
+        h.setPlayerStats(json: json["hls"])
+        v.setPlayerStats(json: json["vls"])
     }
 }

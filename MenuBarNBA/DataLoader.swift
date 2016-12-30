@@ -30,4 +30,24 @@ public class DataLoader {
         }
     }
     
+    func loadBoxScore(game: Game, completion: @escaping () -> Void) {
+        let urlString = "https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2016/scores/gamedetail/\(game.gid)_gamedetail.json"
+        print("Box Score URL String: \(urlString)")
+        Alamofire.request(urlString).responseJSON { (response) in
+            
+            guard let data = response.data else {
+                print("Box Score 数据加载失败")
+                return
+            }
+            
+            let json = JSON(data: data)
+            
+//            print("Box Score 数据加载成功：\(json)")
+            
+            game.setStats(data: json)
+            
+            completion()
+        }
+    }
+    
 }

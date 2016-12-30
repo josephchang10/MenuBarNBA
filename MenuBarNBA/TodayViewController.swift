@@ -57,6 +57,22 @@ class TodayViewController: NSViewController {
     
 }
 
+extension TodayViewController: NSTableViewDelegate {
+    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        guard let tableView = notification.object as? NSTableView, tableView.selectedRow >= 0, tableView.selectedRow <= (gameDay?.games.count ?? 1)-1 else {
+            return
+        }
+        guard let game = gameDay?.games[tableView.selectedRow] else {
+            return
+        }
+        let boxScoreViewController = BoxScoreViewController()
+        boxScoreViewController.game = game
+        presentViewControllerAsSheet(boxScoreViewController)
+    }
+    
+}
+
 extension TodayViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
         return gameDay?.games.count ?? 0

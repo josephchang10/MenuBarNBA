@@ -20,6 +20,9 @@
 		7CF3281F1E1639A7000B9EFD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3281E1E1639A7000B9EFD /* Game.swift */; };
 		7CF328211E163A5F000B9EFD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF328201E163A5F000B9EFD /* Team.swift */; };
 		7CF328231E163C24000B9EFD /* GameDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF328221E163C24000B9EFD /* GameDay.swift */; };
+		7CF328251E164AC1000B9EFD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF328241E164AC1000B9EFD /* Player.swift */; };
+		7CF3282C1E166429000B9EFD /* BoxScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3282A1E166429000B9EFD /* BoxScoreViewController.swift */; };
+		7CF3282E1E1676D8000B9EFD /* BoxScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF328301E1676D8000B9EFD /* BoxScoreViewController.xib */; };
 		D32685B3430D5B094CDEC6A2 /* Pods_MenuBarNBA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,10 @@
 		7CF3281E1E1639A7000B9EFD /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7CF328201E163A5F000B9EFD /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		7CF328221E163C24000B9EFD /* GameDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDay.swift; sourceTree = "<group>"; };
+		7CF328241E164AC1000B9EFD /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		7CF3282A1E166429000B9EFD /* BoxScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxScoreViewController.swift; sourceTree = "<group>"; };
+		7CF3282F1E1676D8000B9EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BoxScoreViewController.xib; sourceTree = "<group>"; };
+		7CF328321E1676DF000B9EFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BoxScoreViewController.strings"; sourceTree = "<group>"; };
 		DB8708A43C95198BE36C12BC /* Pods-MenuBarNBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarNBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA.release.xcconfig"; sourceTree = "<group>"; };
 		EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuBarNBA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,22 +89,57 @@
 		7C99ACB31E14A36B003EE34A /* MenuBarNBA */ = {
 			isa = PBXGroup;
 			children = (
-				7C99ACCD1E14DEA2003EE34A /* MenuBarNBA.entitlements */,
-				7C99ACB41E14A36B003EE34A /* AppDelegate.swift */,
-				7C99ACB61E14A36B003EE34A /* Assets.xcassets */,
-				7C99ACD51E1511FE003EE34A /* Info.plist */,
-				7C99ACB81E14A36B003EE34A /* MainMenu.xib */,
-				7C99ACC11E14AA1E003EE34A /* TodayViewController.swift */,
-				7C99ACC81E14AF53003EE34A /* TodayViewController.xib */,
+				7CF328281E16519F000B9EFD /* Controller */,
+				7CF328271E165187000B9EFD /* View */,
+				7CF328261E165179000B9EFD /* Model */,
+				7CF328291E1651B7000B9EFD /* Resource */,
+			);
+			path = MenuBarNBA;
+			sourceTree = "<group>";
+		};
+		7CF328261E165179000B9EFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */,
 				7C99ACD01E14F5AB003EE34A /* EventMonitor.swift */,
-				7C99ACDB1E151259003EE34A /* InfoPlist.strings */,
-				7C99ACE11E151502003EE34A /* Localizable.strings */,
 				7CF3281E1E1639A7000B9EFD /* Game.swift */,
 				7CF328201E163A5F000B9EFD /* Team.swift */,
 				7CF328221E163C24000B9EFD /* GameDay.swift */,
+				7CF328241E164AC1000B9EFD /* Player.swift */,
 			);
-			path = MenuBarNBA;
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7CF328271E165187000B9EFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C99ACB81E14A36B003EE34A /* MainMenu.xib */,
+				7C99ACC81E14AF53003EE34A /* TodayViewController.xib */,
+				7CF328301E1676D8000B9EFD /* BoxScoreViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7CF328281E16519F000B9EFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C99ACB41E14A36B003EE34A /* AppDelegate.swift */,
+				7C99ACC11E14AA1E003EE34A /* TodayViewController.swift */,
+				7CF3282A1E166429000B9EFD /* BoxScoreViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7CF328291E1651B7000B9EFD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7C99ACCD1E14DEA2003EE34A /* MenuBarNBA.entitlements */,
+				7C99ACB61E14A36B003EE34A /* Assets.xcassets */,
+				7C99ACD51E1511FE003EE34A /* Info.plist */,
+				7C99ACDB1E151259003EE34A /* InfoPlist.strings */,
+				7C99ACE11E151502003EE34A /* Localizable.strings */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		AF78EC16727B7F1E13EB6337 /* Frameworks */ = {
@@ -192,6 +234,7 @@
 				7C99ACBA1E14A36B003EE34A /* MainMenu.xib in Resources */,
 				7C99ACC61E14AF53003EE34A /* TodayViewController.xib in Resources */,
 				7C99ACD91E151259003EE34A /* InfoPlist.strings in Resources */,
+				7CF3282E1E1676D8000B9EFD /* BoxScoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +297,10 @@
 				7C99ACC31E14AA1E003EE34A /* TodayViewController.swift in Sources */,
 				7CF3281F1E1639A7000B9EFD /* Game.swift in Sources */,
 				7CF328231E163C24000B9EFD /* GameDay.swift in Sources */,
+				7CF328251E164AC1000B9EFD /* Player.swift in Sources */,
 				7C99ACB51E14A36B003EE34A /* AppDelegate.swift in Sources */,
 				7C99ACCC1E14B6CA003EE34A /* DataLoader.swift in Sources */,
+				7CF3282C1E166429000B9EFD /* BoxScoreViewController.swift in Sources */,
 				7C99ACD11E14F5AB003EE34A /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +343,15 @@
 				7CF328101E15151E000B9EFD /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7CF328301E1676D8000B9EFD /* BoxScoreViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF3282F1E1676D8000B9EFD /* Base */,
+				7CF328321E1676DF000B9EFD /* zh-Hans */,
+			);
+			name = BoxScoreViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

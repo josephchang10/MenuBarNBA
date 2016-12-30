@@ -33,6 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [unowned self] event in
             if self.popover.isShown {
                 self.closePopover(sender: event)
+                (self.popover.contentViewController as? TodayViewController)?.tableView.deselectAll(nil)
             }
         }
         eventMonitor?.start()
