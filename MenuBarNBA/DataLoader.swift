@@ -14,7 +14,7 @@ public class DataLoader {
 
     static let shared = DataLoader()
     
-    func loadToday(completion: @escaping (_ data: JSON) -> Void) {
+    func loadToday(completion: @escaping (_ gameDay: GameDay) -> Void) {
         Alamofire.request("https://data.nba.com/data/5s/v2015/json/mobile_teams/nba/2016/scores/00_todays_scores.json").responseJSON { (response) in
             
             guard let data = response.data else {
@@ -24,8 +24,9 @@ public class DataLoader {
             
             print("数据加载成功")
             
-            let json = JSON(data: data)
-            completion(json)
+            let gameDay = GameDay(json: JSON(data: data))
+            
+            completion(gameDay)
         }
     }
     

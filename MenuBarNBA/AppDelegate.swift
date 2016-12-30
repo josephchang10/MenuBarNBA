@@ -26,8 +26,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         popover.contentViewController = TodayViewController()
         
-        DataLoader.shared.loadToday { (json) in
-            (self.popover.contentViewController as? TodayViewController)?.games = json["gs"]["g"]
+        DataLoader.shared.loadToday { (gameDay) in
+            (self.popover.contentViewController as? TodayViewController)?.gameDay = gameDay
         }
         
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [unowned self] event in

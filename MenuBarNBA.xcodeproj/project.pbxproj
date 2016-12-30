@@ -17,6 +17,9 @@
 		7C99ACD61E1511FE003EE34A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACD51E1511FE003EE34A /* Info.plist */; };
 		7C99ACD91E151259003EE34A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACDB1E151259003EE34A /* InfoPlist.strings */; };
 		7C99ACDF1E151502003EE34A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACE11E151502003EE34A /* Localizable.strings */; };
+		7CF3281F1E1639A7000B9EFD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3281E1E1639A7000B9EFD /* Game.swift */; };
+		7CF328211E163A5F000B9EFD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF328201E163A5F000B9EFD /* Team.swift */; };
+		7CF328231E163C24000B9EFD /* GameDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF328221E163C24000B9EFD /* GameDay.swift */; };
 		D32685B3430D5B094CDEC6A2 /* Pods_MenuBarNBA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		7C99ACDC1E15125A003EE34A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		7C99ACE01E151502003EE34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7CF328101E15151E000B9EFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7CF3281E1E1639A7000B9EFD /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7CF328201E163A5F000B9EFD /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		7CF328221E163C24000B9EFD /* GameDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDay.swift; sourceTree = "<group>"; };
 		DB8708A43C95198BE36C12BC /* Pods-MenuBarNBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarNBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarNBA/Pods-MenuBarNBA.release.xcconfig"; sourceTree = "<group>"; };
 		EFD12F2DD9707DC4F14510BB /* Pods_MenuBarNBA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuBarNBA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +93,9 @@
 				7C99ACD01E14F5AB003EE34A /* EventMonitor.swift */,
 				7C99ACDB1E151259003EE34A /* InfoPlist.strings */,
 				7C99ACE11E151502003EE34A /* Localizable.strings */,
+				7CF3281E1E1639A7000B9EFD /* Game.swift */,
+				7CF328201E163A5F000B9EFD /* Team.swift */,
+				7CF328221E163C24000B9EFD /* GameDay.swift */,
 			);
 			path = MenuBarNBA;
 			sourceTree = "<group>";
@@ -241,7 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF328211E163A5F000B9EFD /* Team.swift in Sources */,
 				7C99ACC31E14AA1E003EE34A /* TodayViewController.swift in Sources */,
+				7CF3281F1E1639A7000B9EFD /* Game.swift in Sources */,
+				7CF328231E163C24000B9EFD /* GameDay.swift in Sources */,
 				7C99ACB51E14A36B003EE34A /* AppDelegate.swift in Sources */,
 				7C99ACCC1E14B6CA003EE34A /* DataLoader.swift in Sources */,
 				7C99ACD11E14F5AB003EE34A /* EventMonitor.swift in Sources */,

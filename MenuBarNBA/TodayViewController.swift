@@ -15,15 +15,13 @@ class TodayViewController: NSViewController {
     @IBOutlet weak var indicator: NSProgressIndicator!
     @IBOutlet weak var indicatorTextField: NSTextField!
     
-    var games: JSON? {
+    var gameDay: GameDay? {
         didSet {
-            
             if tableView != nil { //没有显示的时候防止崩溃
                 tableView.reloadData()
                 indicator.isHidden = true
                 indicatorTextField.isHidden = true
             }
-            
         }
     }
     
@@ -31,7 +29,7 @@ class TodayViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         
-        if games == nil {
+        if gameDay == nil {
             startIndicator()
         }
         
@@ -43,8 +41,8 @@ class TodayViewController: NSViewController {
         super.viewDidAppear()
         
         startIndicator()
-        DataLoader.shared.loadToday { (json) in
-            self.games = json["gs"]["g"]
+        DataLoader.shared.loadToday { (gameDay) in
+            self.gameDay = gameDay
         }
     }
     
@@ -61,35 +59,33 @@ class TodayViewController: NSViewController {
 
 extension TodayViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return games?.count ?? 0
+        return gameDay?.games.count ?? 0
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        guard let game = games?[row] else {
+        guard let game = gameDay?.games[row] else {
             return nil
         }
         
-        print("game:\(game)")
-        
         var text = ""
-        var team: JSON?
+        var team: Team?
         if tableColumn == tableView.tableColumns[0] {
             //home
-            team = game["h"]
+            team = game.h
         }else if tableColumn == tableView.tableColumns[1] {
             //visiting
-            team = game["v"]
+            team = game.v
         }else if tableColumn == tableView.tableColumns[2] {
-            text = game["stt"].string ?? ""
+            text = game.stt
             text = NSLocalizedString(text, comment: "时间")
             
-            if game["cl"].string != "00:00.0", let cl = game["cl"].string {
-                text += " \(cl)"
+            if game.cl != "00:00.0" {
+                text += " \(game.cl)"
             }
             
         }
         
-        if let ta = team?["ta"].string, let s = team?["s"].int {
+        if let ta = team?.ta, let s = team?.s {
             text = "\(NSLocalizedString(ta, comment: "球队名字")) \(s)"
         }
         return text
