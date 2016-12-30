@@ -22,7 +22,6 @@ class TodayViewController: NSViewController {
                 tableView.reloadData()
                 indicator.isHidden = true
                 indicatorTextField.isHidden = true
-                indicator.stopAnimation(nil)
             }
             
         }
@@ -35,6 +34,8 @@ class TodayViewController: NSViewController {
         if games == nil {
             startIndicator()
         }
+        
+        indicator.startAnimation(nil)
         
     }
     
@@ -50,7 +51,6 @@ class TodayViewController: NSViewController {
     func startIndicator() {
         indicator.isHidden = false
         indicatorTextField.isHidden = false
-        indicator.startAnimation(nil)
     }
     
     @IBAction func quit(_ sender: Any) {
