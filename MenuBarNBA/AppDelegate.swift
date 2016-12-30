@@ -24,7 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(togglePopover(sender:))
         }
         
-        popover.contentViewController = TodayViewController(nibName: "TodayViewController", bundle: nil)
+        popover.contentViewController = TodayViewController()
         
         DataLoader.shared.loadToday { (json) in
             (self.popover.contentViewController as? TodayViewController)?.games = json["gs"]["g"]
