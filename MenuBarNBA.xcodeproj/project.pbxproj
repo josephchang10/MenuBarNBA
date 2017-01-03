@@ -14,7 +14,6 @@
 		7C99ACC61E14AF53003EE34A /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACC81E14AF53003EE34A /* TodayViewController.xib */; };
 		7C99ACCC1E14B6CA003EE34A /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99ACCB1E14B6CA003EE34A /* DataLoader.swift */; };
 		7C99ACD11E14F5AB003EE34A /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99ACD01E14F5AB003EE34A /* EventMonitor.swift */; };
-		7C99ACD61E1511FE003EE34A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACD51E1511FE003EE34A /* Info.plist */; };
 		7C99ACD91E151259003EE34A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACDB1E151259003EE34A /* InfoPlist.strings */; };
 		7C99ACDF1E151502003EE34A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C99ACE11E151502003EE34A /* Localizable.strings */; };
 		7CF3281F1E1639A7000B9EFD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3281E1E1639A7000B9EFD /* Game.swift */; };
@@ -228,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C99ACD61E1511FE003EE34A /* Info.plist in Resources */,
 				7C99ACDF1E151502003EE34A /* Localizable.strings in Resources */,
 				7C99ACB71E14A36B003EE34A /* Assets.xcassets in Resources */,
 				7C99ACBA1E14A36B003EE34A /* MainMenu.xib in Resources */,

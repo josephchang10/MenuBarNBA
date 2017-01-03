@@ -3,61 +3,61 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "NBA-16.png",
+      "filename" : "the_rondo-fullMacMicro_16pt.png",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "NBA-15.png",
+      "filename" : "the_rondo-fullMacMicro_16pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "NBA-14.png",
+      "filename" : "the_rondo-fullMacSmall_32pt.png",
       "scale" : "1x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "NBA-13.png",
+      "filename" : "the_rondo-fullMacSmall_32pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "NBA-12.png",
+      "filename" : "the_rondo-fullMacMedium_128pt.png",
       "scale" : "1x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "NBA-11.png",
+      "filename" : "the_rondo-fullMacMedium_128pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "NBA-10.png",
+      "filename" : "the_rondo-fullMacLarge_256pt.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "NBA-9.png",
+      "filename" : "the_rondo-fullMacLarge_256pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "NBA-8.png",
+      "filename" : "the_rondo-fullMacHuge_512pt.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "NBA-7.png",
+      "filename" : "the_rondo-fullMacHuge_512pt@2x.png",
       "scale" : "2x"
     }
   ],

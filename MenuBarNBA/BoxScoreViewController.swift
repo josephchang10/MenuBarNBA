@@ -46,6 +46,10 @@ class BoxScoreViewController: NSViewController {
         tableView.reloadData()
     }
     
+    @IBAction func cancel(_ sender: Any) {
+        self.dismiss(sender)
+    }
+    
     
 }
 
