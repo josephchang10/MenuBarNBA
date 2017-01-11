@@ -37,6 +37,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
         eventMonitor?.start()
+        
+        showPopover(sender: nil)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
